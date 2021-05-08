@@ -37,4 +37,10 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       border: "none",
     },
   },
+  "@media (max-width: 320px)": {
+    root: {
+      // padding: "1em 0.5em",
+      minWidth: "120px",
+    },
+  },
 }));

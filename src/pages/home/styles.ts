@@ -41,6 +41,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   buttons: {
     display: "flex",
     padding: "1em",
+    paddingTop: "3em",
     justifyContent: "space-between",
     width: "32%",
     alignItems: "center",
@@ -54,6 +55,24 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     buttons: {
       width: "90%",
       padding: "2em",
+    },
+  },
+
+  "@media (max-width: 540px)": {
+    root: {
+      width: "90%",
+      padding: "2em",
+    },
+    buttons: {
+      width: "90%",
+      padding: "2em",
+    },
+  },
+
+  "@media (max-width: 320px)": {
+    buttons: {
+      // padding: "1em 0.5em",
+      width: "80%",
     },
   },
 }));
