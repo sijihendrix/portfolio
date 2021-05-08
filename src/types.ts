@@ -1,4 +1,11 @@
 export interface Theme {
-  background: string;
-  color: string;
+  colors: Colors;
 }
+
+type Colors = {
+  background: string;
+  primary: string;
+  secondary: string;
+  white: string;
+  secondPrimary: string;
+};
