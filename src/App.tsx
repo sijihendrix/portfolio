@@ -9,7 +9,15 @@ import ReactModal from "react-modal";
 
 function App() {
   const classes = useStyles();
-  const [isOpen, setModal] = useState(true);
+  const [isOpen, setModal] = useState(false);
+
+  const handleModalOpen: () => void = () => {
+    setModal(true);
+  };
+
+  const handleModalClose: () => void = () => {
+    setModal(false);
+  };
 
   return (
     <>
@@ -18,8 +26,13 @@ function App() {
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home />
-                <ReactModal isOpen={isOpen} style={reactModal}>
+                <Home handleModal={handleModalOpen} />
+                <ReactModal
+                  isOpen={isOpen}
+                  style={reactModal}
+                  onRequestClose={handleModalClose}
+                  shouldCloseOnEsc={true}
+                >
                   <Form />
                 </ReactModal>
               </Route>

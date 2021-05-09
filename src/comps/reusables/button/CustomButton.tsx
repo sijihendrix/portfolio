@@ -1,10 +1,13 @@
 import React from "react";
 import { useStyles } from "./styles";
 import clsx from "clsx";
-export const CustomButton = ({ children, inverted }: any) => {
+export const CustomButton = ({ children, inverted, handleModal }: any) => {
   const classes = useStyles();
   return (
-    <button className={clsx(classes.root, inverted && classes.inverted)}>
+    <button
+      className={clsx(classes.root, inverted && classes.inverted)}
+      onClick={inverted ? handleModal : null}
+    >
       {children}
     </button>
   );
