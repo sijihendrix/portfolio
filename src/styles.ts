@@ -7,3 +7,12 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     width: "100%",
   },
 }));
+
+export const reactModal = {
+  overlay: { background: "transperent" },
+  content: {
+    width: "800px",
+    margin: "0 auto",
+    height: "60vh",
+  },
+};

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { ThemeProvider } from "react-jss";
 import { theme } from "./theme";
-import { useStyles } from "./styles";
+import { reactModal, useStyles } from "./styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { Form } from "./comps/form/Form";
+import ReactModal from "react-modal";
 
 function App() {
   const classes = useStyles();
+  const [isOpen, setModal] = useState(true);
 
   return (
     <>
@@ -17,9 +19,9 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <Home />
-              </Route>
-              <Route path="/form">
-                <Form />
+                <ReactModal isOpen={isOpen} style={reactModal}>
+                  <Form />
+                </ReactModal>
               </Route>
             </Switch>
           </Router>
