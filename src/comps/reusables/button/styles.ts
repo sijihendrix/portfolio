@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { Theme } from "../../types";
+import { Theme } from "../../../types";
 
 export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
@@ -22,7 +22,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     textAlign: "center",
     "&:hover": {
       backgroundColor: "white",
-      color: "black",
+      color: theme.colors.secondPrimary,
       border: "1px solid black",
       boxShadow: "0 3px 6px rgb(0, 173, 181), 0 3px 6px  rgb(170, 216, 211)",
     },
@@ -33,13 +33,12 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     border: " 1px solid black",
     "&:hover": {
       backgroundColor: "theme.textColor",
-      color: "#00adb5",
+      color: theme.colors.secondPrimary,
       border: "none",
     },
   },
   "@media (max-width: 320px)": {
     root: {
-      // padding: "1em 0.5em",
       minWidth: "120px",
     },
   },

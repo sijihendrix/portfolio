@@ -4,6 +4,7 @@ import { theme } from "./theme";
 import { useStyles } from "./styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
+import { Form } from "./comps/form/Form";
 
 function App() {
   const classes = useStyles();
@@ -16,6 +17,9 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <Home />
+              </Route>
+              <Route path="/form">
+                <Form />
               </Route>
             </Switch>
           </Router>

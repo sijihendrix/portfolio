@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomButton } from "../button/CustomButton";
+import { CustomButton } from "../reusables/button/CustomButton";
 import { useStyles } from "./styles";
 
 const buttons = [

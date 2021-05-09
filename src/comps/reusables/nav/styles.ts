@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { Theme } from "../../types";
+import { Theme } from "../../../types";
 
 export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
@@ -7,7 +7,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     maxWidth: "1100px",
     margin: "0 auto",
     padding: "1em ",
-    // paddingRight: "15em",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",

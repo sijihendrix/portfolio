@@ -4,6 +4,6 @@ export const theme = {
     white: "#fff",
     primary: "#eeeeee",
     secondary: "#aad8d3",
-    secondPrimary: "00adb5",
+    secondPrimary: "#00adb5",
   },
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import { useStyles } from "./styles";
-import { ReactComponent as GitHub } from "../../assets/github.svg";
-import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
+import { ReactComponent as GitHub } from "../../../assets/github.svg";
+import { ReactComponent as Linkedin } from "../../../assets/linkedin.svg";
+import { Animate } from "../animate/Animate";
 
 export const Socials = () => {
   const classes = useStyles();
@@ -11,8 +12,12 @@ export const Socials = () => {
         href="https://www.linkedin.com/in/oluwasijibomi-bamgboye/"
         target="_blank"
         rel="noopener noreferrer"
+        // className={classes.test}
+        // onMouseOver
       >
-        <GitHub />
+        <Animate>
+          <GitHub />
+        </Animate>
       </a>
       <a
         href="https://github.com/sijihendrix"
