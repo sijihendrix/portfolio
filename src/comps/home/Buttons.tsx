@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomButton } from "../../comps/button/CustomButton";
+import { CustomButton } from "../button/CustomButton";
 import { useStyles } from "./styles";
 
 const buttons = [

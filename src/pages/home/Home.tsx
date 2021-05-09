@@ -1,8 +1,8 @@
 import React from "react";
 import { Nav } from "../../comps/nav/Nav";
-import { Buttons } from "./Buttons";
-import { Content } from "./Content";
-import { Hero } from "./Hero";
+import { Buttons } from "../../comps/home/Buttons";
+import { Content } from "../../comps/home/Content";
+import { Hero } from "../../comps/home/Hero";
 
 export const Home = () => {
   return (
