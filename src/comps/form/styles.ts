@@ -1,25 +1,26 @@
 import { createUseStyles } from "react-jss";
+import { Theme } from "../../types";
 
-export const useStyles = createUseStyles(() => ({
+export const useStyles = createUseStyles((theme: Theme) => ({
   input: {
-    width: "40%",
     padding: "12px 20px",
     boxSizing: "border-box",
-    border: "2px solid red",
+    border: `2px solid ${theme.colors.background} `,
     borderRadius: "4px",
     transition: "all .25s ease-in-out",
-    backgroundColor: "rgba(38,169,234,.5)",
-    height: "60px",
+    backgroundColor: theme.colors.secondary,
+
     fontSize: " 14px",
     lineHeight: "1.6",
     margin: " 15px 0",
   },
   container: {
     maxWidth: "800px",
-    background: "white",
+    background: theme.colors.primary,
     margin: "0 auto",
     alignItems: "center",
-    padding: "1% 2%",
+    padding: "0.8% 2%",
+    // transform: "translateX(0px)"
   },
   talk: {
     color: "black",
@@ -28,10 +29,7 @@ export const useStyles = createUseStyles(() => ({
     letterSpacing: " -0.008em",
     lineHseight: "1.5",
   },
-  message: {
-    height: "150px",
-    width: "90%",
-  },
+
   inputFlow: {
     display: "flex",
     justifyContent: "space-around",

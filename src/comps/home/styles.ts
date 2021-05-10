@@ -8,6 +8,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     color: theme.colors.primary,
     display: "flex",
     flexDirection: "column",
+    fontFamily: " 'Roboto', sans-serif",
   },
   hi: {
     margin: "0",
@@ -20,6 +21,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     margin: "0",
     padding: "0.2em 0",
     fontSize: "8rem",
+    textTransform: "capitalize",
     textShadow:
       "-1px 1px 2px #00adb5, 1px 1px 2px #aad8d3,1px -1px 0 #00adb5, -1px -1px 0 #00adb5",
   },
@@ -27,6 +29,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     margin: "0",
     padding: "0.1em 0",
     fontSize: "2.5rem",
+    fontFamily: "'Montserrat', sans-serif",
   },
   hero: {
     display: "flex",

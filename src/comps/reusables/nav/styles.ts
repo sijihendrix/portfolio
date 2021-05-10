@@ -11,10 +11,34 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
+    fontFamily: "'Montserrat', sans-serif",
   },
   home: {
     color: theme.colors.primary,
     fontSize: "3rem",
+    cursor: "pointer",
+    textDecoration: "none",
+    display: "inline-block",
+    "& :before": {
+      opacity: "0",
+      transition: " opacity 0.35s, transform 0.35s",
+      transform: " scale(0,1)",
+    },
+    "& :after": {
+      opacity: "0",
+      borderBottom: "1px solid",
+      transition: "opacity 0.35s, -webkit-transform 0.35s",
+      transform: " scale(0,1)",
+    },
+
+    "& :hover:after": {
+      opacity: "1",
+      transform: "scale(1)",
+    },
+
+    "& :hover": {
+      borderBottom: " 1px solid white",
+    },
   },
   socials: {
     display: "flex",

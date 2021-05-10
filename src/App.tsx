@@ -30,8 +30,8 @@ function App() {
                 <ReactModal
                   isOpen={isOpen}
                   style={reactModal}
-                  onRequestClose={handleModalClose}
                   shouldCloseOnEsc={true}
+                  onRequestClose={handleModalClose}
                 >
                   <Form />
                 </ReactModal>

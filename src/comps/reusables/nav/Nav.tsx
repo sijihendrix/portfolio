@@ -8,7 +8,9 @@ export const Nav = () => {
 
   return (
     <nav className={classes.root}>
-      <span className={classes.home}>Home</span>
+      <a className={classes.home} href="/">
+        Home
+      </a>
       <Toggle />
 
       <Socials />

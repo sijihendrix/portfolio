@@ -1,5 +1,4 @@
 import React from "react";
-import { lorem } from "../../helpers/lorem";
 import { useStyles } from "./styles";
 
 export const Content = () => {
@@ -7,8 +6,11 @@ export const Content = () => {
   return (
     <main className={classes.root}>
       <h3 className={classes.hi}>hi,</h3>
-      <h1 className={classes.name}>Mein Name Ist Siji</h1>
-      <p className={classes.description}>{lorem.generateSentences(3)}</p>
+      <h1 className={classes.name}>My name is Siji</h1>
+      <p className={classes.description}>
+        I am a software engineer with experience with FrontEnd and Dev Ops
+        technologies. Feel free to hit the Contact Me button.
+      </p>
     </main>
   );
 };

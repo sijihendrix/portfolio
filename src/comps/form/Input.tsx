@@ -1,15 +1,15 @@
 import React from "react";
 import { useStyles } from "./styles";
-import clsx from "clsx";
 
-export const Input = ({ placeholder, message }: any) => {
+export const TextArea = ({ placeholder, rows, cols }: any) => {
   const classes = useStyles();
   return (
-    <input
-      type="text"
+    <textarea
       id="fname"
       name="fname"
-      className={clsx(classes.input, message && classes.message)}
+      rows={rows}
+      cols={cols}
+      className={classes.input}
       placeholder={placeholder}
     />
   );

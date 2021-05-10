@@ -12,8 +12,10 @@ export const reactModal = {
   overlay: { background: "transperent" },
   content: {
     maxWidth: "800px",
-    margin: "0 auto",
+    margin: "auto ",
     height: "60vh",
     borderRadius: "12px",
+    background: "#eeeeee",
+    // transition: "margin-right 4s",
   },
 };
