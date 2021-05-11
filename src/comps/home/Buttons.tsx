@@ -1,5 +1,4 @@
 import React from "react";
-
 import { FormProps } from "../../types";
 import { CustomButton } from "../reusables/button/CustomButton";
 import { useStyles } from "./styles";

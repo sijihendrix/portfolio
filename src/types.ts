@@ -11,12 +11,13 @@ type Colors = {
 };
 
 export interface FormProps {
-  handleModal: () => void;
+  handleModal?: () => void;
   isOpen?: boolean;
 }
 
 export type ContainerProps = {
   children: JSX.Element;
+  handleModal?: FormProps["handleModal"];
 };
 
 export interface TextAreaProps {
@@ -27,4 +28,10 @@ export interface TextAreaProps {
 
 export interface HeroProps extends ContainerProps {
   isOpen: FormProps["isOpen"];
+}
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: string;
+  inverted?: boolean;
 }

@@ -34,7 +34,7 @@ function App() {
                   onRequestClose={handleModalClose}
                   ariaHideApp={false}
                 >
-                  <Form />
+                  <Form handleModal={handleModalClose} />
                 </ReactModal>
               </Route>
             </Switch>

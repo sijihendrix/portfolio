@@ -1,10 +1,11 @@
 import React from "react";
+import { FormProps } from "../../types";
 import { CustomButton } from "../reusables/button/CustomButton";
 import { Container } from "./Container";
 import { TextArea } from "./Input";
 import { useStyles } from "./styles";
 
-export const Form = () => {
+export const Form = ({ handleModal }: FormProps) => {
   const classes = useStyles();
   const data = [
     { placeholder: "Your Name", message: false, col: 31, row: 1 },
@@ -14,7 +15,7 @@ export const Form = () => {
 
   return (
     <form>
-      <Container>
+      <Container handleModal={handleModal}>
         <>
           <div className={classes.inputFlow}>
             {data.map(({ placeholder, col, row }, index) => {

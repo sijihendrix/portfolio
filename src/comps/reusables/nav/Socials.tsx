@@ -12,8 +12,6 @@ export const Socials = () => {
         href="https://www.linkedin.com/in/oluwasijibomi-bamgboye/"
         target="_blank"
         rel="noopener noreferrer"
-        // className={classes.test}
-        // onMouseOver
       >
         <Animate>
           <GitHub />

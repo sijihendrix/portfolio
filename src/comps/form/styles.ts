@@ -20,7 +20,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     margin: "0 auto",
     alignItems: "center",
     padding: "0.8% 2%",
-    // transform: "translateX(0px)"
   },
   talk: {
     color: "black",
@@ -37,5 +36,11 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   buttonContainer: {
     padding: "0 5% ",
+  },
+  heading: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingRight: "3%",
   },
 }));
