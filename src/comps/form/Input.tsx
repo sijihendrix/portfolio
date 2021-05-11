@@ -12,7 +12,6 @@ export const TextArea = ({
   const classes = useStyles();
   return (
     <textarea
-      id="fname"
       name={name}
       rows={rows}
       cols={cols}

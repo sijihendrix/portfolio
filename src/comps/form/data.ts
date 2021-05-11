@@ -6,7 +6,6 @@ export const data = [
     message: false,
     col: 31,
     row: 1,
-
     name: "from_name",
   },
   {
@@ -14,7 +13,6 @@ export const data = [
     message: false,
     col: 31,
     row: 1,
-
     name: "reply_to",
   },
   {
@@ -22,7 +20,6 @@ export const data = [
     message: true,
     col: 79,
     row: 6,
-
     name: "message",
   },
 ];

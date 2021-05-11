@@ -4,31 +4,18 @@ import { CustomButton } from "../reusables/button/CustomButton";
 import { Container } from "./Container";
 import { TextArea } from "./Input";
 import { useStyles } from "./styles";
-import * as emailjs from "emailjs-com";
 import { data, formDataDefault } from "./data";
+import { handleEmailSend } from "../../helpers/emailjs";
 
 export const Form = ({ handleModal }: FormProps) => {
   const classes = useStyles();
 
   const [formData, setFormData] = useState<formDataProps>(formDataDefault);
 
-  const SERVICE_ID = "service_91iskxk";
-  const TEMPLATE_ID = "template_qbbmeha";
-  const USER_ID = "user_rUDjcygOPlpS5espn9ZLE";
-
-  function handleClick(e: React.SyntheticEvent) {
+  function handleSubmit(e: React.SyntheticEvent) {
     e.preventDefault();
-
     const data = formData;
-
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, USER_ID).then(
-      function (response) {
-        console.log(response.status, response.text);
-      },
-      function (err) {
-        console.log(err);
-      }
-    );
+    handleEmailSend(data);
   }
 
   const handleChange = (e: React.SyntheticEvent) => {
@@ -39,7 +26,7 @@ export const Form = ({ handleModal }: FormProps) => {
   };
 
   return (
-    <form onSubmit={handleClick}>
+    <form onSubmit={handleSubmit}>
       <Container handleModal={handleModal}>
         <>
           <div className={classes.inputFlow}>
