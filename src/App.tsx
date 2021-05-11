@@ -26,12 +26,13 @@ function App() {
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home handleModal={handleModalOpen} />
+                <Home handleModal={handleModalOpen} isOpen={isOpen} />
                 <ReactModal
                   isOpen={isOpen}
                   style={reactModal}
                   shouldCloseOnEsc={true}
                   onRequestClose={handleModalClose}
+                  ariaHideApp={false}
                 >
                   <Form />
                 </ReactModal>

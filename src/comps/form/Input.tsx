@@ -1,7 +1,8 @@
 import React from "react";
+import { TextAreaProps } from "../../types";
 import { useStyles } from "./styles";
 
-export const TextArea = ({ placeholder, rows, cols }: any) => {
+export const TextArea = ({ placeholder, rows, cols }: TextAreaProps) => {
   const classes = useStyles();
   return (
     <textarea

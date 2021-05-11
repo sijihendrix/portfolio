@@ -3,17 +3,17 @@ import { Nav } from "../../comps/reusables/nav/Nav";
 import { Buttons } from "../../comps/home/Buttons";
 import { Content } from "../../comps/home/Content";
 import { Hero } from "../../comps/home/Hero";
-export interface HomeProps {
-  handleModal: () => void;
-}
+import { FormProps } from "../../types";
 
-export const Home = ({ handleModal }: HomeProps) => {
+export const Home = ({ handleModal, isOpen }: FormProps) => {
   return (
     <>
-      <Nav />
-      <Hero>
-        <Content />
-        <Buttons handleModal={handleModal} />
+      <Nav isOpen={isOpen} />
+      <Hero isOpen={isOpen}>
+        <>
+          <Content />
+          <Buttons handleModal={handleModal} />
+        </>
       </Hero>
     </>
   );

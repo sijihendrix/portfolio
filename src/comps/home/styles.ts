@@ -49,7 +49,9 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     width: "32%",
     alignItems: "center",
   },
-
+  modalOpen: {
+    opacity: "0.1",
+  },
   "@media (max-width: 504px)": {
     root: {
       width: "auto",

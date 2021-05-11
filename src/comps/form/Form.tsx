@@ -15,23 +15,23 @@ export const Form = () => {
   return (
     <form>
       <Container>
-        <div className={classes.inputFlow}>
-          {data.map(({ placeholder, message, col, row }, index) => {
-            console.log(row);
-            return (
-              <TextArea
-                placeholder={placeholder}
-                message={message}
-                cols={col}
-                rows={row}
-                key={index}
-              />
-            );
-          })}
-        </div>
-        <div className={classes.buttonContainer}>
-          <CustomButton>Message Me</CustomButton>
-        </div>
+        <>
+          <div className={classes.inputFlow}>
+            {data.map(({ placeholder, col, row }, index) => {
+              return (
+                <TextArea
+                  placeholder={placeholder}
+                  cols={col}
+                  rows={row}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+          <div className={classes.buttonContainer}>
+            <CustomButton children="Message Me" onClick={() => null} />
+          </div>
+        </>
       </Container>
     </form>
   );

@@ -43,4 +43,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   socials: {
     display: "flex",
   },
+  modalOpen: {
+    opacity: "0.1",
+  },
 }));

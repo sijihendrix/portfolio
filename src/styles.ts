@@ -9,7 +9,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
 }));
 
 export const reactModal = {
-  overlay: { background: "transperent" },
+  overlay: { background: "none" },
   content: {
     maxWidth: "800px",
     margin: "auto ",
