@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface Theme {
   colors: Colors;
 }
@@ -24,6 +26,8 @@ export interface TextAreaProps {
   placeholder: string;
   rows: number;
   cols: number;
+  handleChange: (e: React.ChangeEvent) => void;
+  name: string;
 }
 
 export interface HeroProps extends ContainerProps {
@@ -35,3 +39,9 @@ export interface ButtonProps
   children: string;
   inverted?: boolean;
 }
+
+export type formDataProps = {
+  from_name: string;
+  reply_to: string;
+  message: string;
+};

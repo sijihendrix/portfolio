@@ -8,7 +8,6 @@ export const Buttons = ({ handleModal }: FormProps) => {
     { kind: "Projects", inverted: false, onClick: () => null },
     { kind: "Contact Me", inverted: true, onClick: handleModal },
   ];
-  console.log(handleModal);
 
   const classes = useStyles();
   return (
