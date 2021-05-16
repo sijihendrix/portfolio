@@ -2,14 +2,13 @@ import { createUseStyles } from "react-jss";
 import { Theme } from "../../types";
 
 export const useStyles = createUseStyles((theme: Theme) => ({
-  input: {
+  textarea: {
     padding: "12px 20px",
     boxSizing: "border-box",
     border: `2px solid ${theme.colors.background} `,
     borderRadius: "4px",
     transition: "all .25s ease-in-out",
     backgroundColor: theme.colors.secondary,
-
     fontSize: " 14px",
     lineHeight: "1.6",
     margin: " 15px 0",
@@ -18,7 +17,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     maxWidth: "800px",
     background: theme.colors.primary,
     margin: "0 auto",
-    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
     padding: "0.8% 2%",
   },
   talk: {
@@ -26,21 +26,27 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     fontSize: "42px",
     fontStyle: "inherit",
     letterSpacing: " -0.008em",
-    lineHseight: "1.5",
+    lineHeight: "1.5",
+    margin: "2% 0",
   },
 
   inputFlow: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     flexWrap: "wrap",
   },
-  buttonContainer: {
-    padding: "0 5% ",
-  },
+  buttonContainer: {},
   heading: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingRight: "3%",
+    color: theme.colors.background,
+  },
+  width: {
+    width: "40%",
+  },
+  errorMsg: {
+    color: "red",
+    fontSize: "1.5rem",
   },
 }));

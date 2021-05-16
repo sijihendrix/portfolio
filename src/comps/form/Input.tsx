@@ -1,23 +1,18 @@
 import React from "react";
-import { TextAreaProps } from "../../types";
 import { useStyles } from "./styles";
+import clsx from "clsx";
 
-export const TextArea = ({
-  placeholder,
-  rows,
-  cols,
-  handleChange,
-  name,
-}: TextAreaProps) => {
+export const Input = ({ name, type, handleChange, placeholder }: any) => {
   const classes = useStyles();
+
   return (
-    <textarea
+    <input
+      type={type}
       name={name}
-      rows={rows}
-      cols={cols}
-      className={classes.input}
-      placeholder={placeholder}
       onChange={handleChange}
+      placeholder={placeholder}
+      className={clsx(classes.textarea, classes.width)}
+      required
     />
   );
 };

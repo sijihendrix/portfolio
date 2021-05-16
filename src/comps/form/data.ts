@@ -4,22 +4,15 @@ export const data = [
   {
     placeholder: "Your Name",
     message: false,
-    col: 31,
-    row: 1,
+    type: "text",
     name: "from_name",
+    errorMsg: "Name must be at least 2 characters",
   },
   {
     placeholder: "Your Email",
     message: false,
-    col: 31,
-    row: 1,
+    type: "email",
     name: "reply_to",
-  },
-  {
-    placeholder: "Words for me",
-    message: true,
-    col: 79,
-    row: 6,
-    name: "message",
+    errorMsg: "Please input a valid email",
   },
 ];
