@@ -13,7 +13,7 @@ type Colors = {
 };
 
 export interface FormProps {
-  handleModal?: () => void;
+  handleModal: () => void;
   isOpen?: boolean;
 }
 

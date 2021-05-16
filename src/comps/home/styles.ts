@@ -39,7 +39,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     minHeight: "100vh",
     maxWidth: "1100px",
     margin: "auto ",
-    // paddingTop: "150px",
   },
   buttons: {
     display: "flex",
@@ -51,6 +50,16 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   modalOpen: {
     opacity: "0.1",
+  },
+  "@media (max-width: 1024px)": {
+    buttons: {
+      width: "34%",
+    },
+  },
+  "@media (max-width: 768px)": {
+    buttons: {
+      width: "50%",
+    },
   },
   "@media (max-width: 504px)": {
     root: {
@@ -69,15 +78,32 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       padding: "2em",
     },
     buttons: {
-      width: "90%",
+      width: "70%",
       padding: "2em",
     },
   },
 
+  "@media (max-width: 411px)": {
+    buttons: {
+      width: "85%",
+      padding: "2em",
+    },
+  },
+
+  "@media (max-width: 375px)": {
+    buttons: {
+      width: "90%",
+    },
+  },
+
+  "@media (max-width: 360px)": {
+    buttons: {
+      width: "95%",
+    },
+  },
   "@media (max-width: 320px)": {
     buttons: {
-      // padding: "1em 0.5em",
-      width: "80%",
+      width: "90%",
     },
   },
 }));

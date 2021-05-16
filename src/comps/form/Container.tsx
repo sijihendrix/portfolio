@@ -7,7 +7,7 @@ export const Container = ({ children, handleModal }: ContainerProps) => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Heading onClick={handleModal} />
+      <Heading handleClick={handleModal} />
       {children}
     </div>
   );

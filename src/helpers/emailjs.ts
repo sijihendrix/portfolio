@@ -1,4 +1,5 @@
 import * as emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 import { formDataProps } from "../types";
 
 const SERVICE_ID = "service_91iskxk";
@@ -11,9 +12,11 @@ export function handleEmailSend(formData: formDataProps) {
   emailjs.send(SERVICE_ID, TEMPLATE_ID, data, USER_ID).then(
     function (response) {
       console.log(response.status, response.text);
+      toast("Your Email has been sent to me, thanks");
     },
     function (err) {
       console.log(err);
+      toast(err);
     }
   );
 }

@@ -27,11 +27,9 @@ export const Form = ({ handleModal }: FormProps) => {
     if (!validateEmail(formData.reply_to)) {
       setEmailError(true);
     }
-    if (
-      !validateName(formData.from_name) &&
-      !validateEmail(formData.reply_to)
-    ) {
+    if (validateName(formData.from_name) && validateEmail(formData.reply_to)) {
       handleEmailSend(formData);
+      handleModal();
     }
   }
 
