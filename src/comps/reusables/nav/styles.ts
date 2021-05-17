@@ -4,9 +4,9 @@ import { Theme } from "../../../types";
 export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
     background: theme.colors.background,
-    maxWidth: "1100px",
+    // maxWidth: "1100px",
     margin: "0 auto",
-    padding: "1em ",
+    padding: "1% 2.5%",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -62,9 +62,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   link: {
     "&:hover": {
-      // background: "yellow",
       animation: "$shake  1s 1",
-      // fill: "yellow",
     },
   },
 }));

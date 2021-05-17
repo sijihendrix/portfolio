@@ -12,14 +12,14 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GitHub className={classes.link} />
+        <Linkedin className={classes.link} />
       </a>
       <a
         href="https://github.com/sijihendrix"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Linkedin className={classes.link} />
+        <GitHub className={classes.link} />
       </a>
     </main>
   );

@@ -35,7 +35,9 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     justifyContent: "space-between",
     flexWrap: "wrap",
   },
-  buttonContainer: {},
+  buttonContainer: {
+    padding: "4.5% 0",
+  },
   heading: {
     display: "flex",
     alignItems: "center",
