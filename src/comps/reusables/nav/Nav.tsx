@@ -16,9 +16,9 @@ export const Nav = ({ isOpen }: NavTypes) => {
       <a className={classes.home} href="/">
         Home
       </a>
-      <Toggle />
 
       <Socials />
+      <Toggle />
     </nav>
   );
 };

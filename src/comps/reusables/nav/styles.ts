@@ -4,11 +4,10 @@ import { Theme } from "../../../types";
 export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
     background: theme.colors.background,
-    // maxWidth: "1100px",
     margin: "0 auto",
-    padding: "1% 2.5%",
-    display: "flex",
-    justifyContent: "space-between",
+    padding: "1% 3%",
+    display: "grid",
+    gridTemplateColumns: "40fr 1fr 1fr 1fr",
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
@@ -42,6 +41,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   socials: {
     display: "flex",
+    justifyContent: "space-between",
   },
   modalOpen: {
     opacity: "0.1",

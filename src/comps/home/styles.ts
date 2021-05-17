@@ -36,7 +36,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     justifyContent: " center",
     flexDirection: "column",
     alignItems: "flex-start",
-    minHeight: "100vh",
+    minHeight: "91vh",
     maxWidth: "1100px",
     margin: "auto ",
   },
@@ -61,16 +61,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       width: "50%",
     },
   },
-  "@media (max-width: 504px)": {
-    root: {
-      width: "auto",
-      padding: "2em",
-    },
-    buttons: {
-      width: "90%",
-      padding: "2em",
-    },
-  },
 
   "@media (max-width: 540px)": {
     root: {
@@ -80,6 +70,20 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     buttons: {
       width: "70%",
       padding: "2em",
+    },
+  },
+  "@media (max-width: 504px)": {
+    root: {
+      width: "auto",
+      padding: "2em",
+    },
+    buttons: {
+      width: "90%",
+      padding: "2em",
+    },
+    hero: {
+      minHeight: "91vh",
+      padding: "2% 0",
     },
   },
 
