@@ -16,7 +16,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   container: {
     maxWidth: "800px",
     background: theme.colors.primary,
-    margin: "0 auto",
+    margin: "10% auto",
     display: "flex",
     flexDirection: "column",
     padding: "0.8% 2%",

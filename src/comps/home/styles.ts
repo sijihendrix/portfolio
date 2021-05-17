@@ -36,7 +36,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     justifyContent: " center",
     flexDirection: "column",
     alignItems: "flex-start",
-    minHeight: "91vh",
+    minHeight: "100vh",
     maxWidth: "1100px",
     margin: "auto ",
   },
@@ -82,7 +82,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       padding: "2em",
     },
     hero: {
-      minHeight: "91vh",
+      minHeight: "90vh",
       padding: "2% 0",
     },
   },

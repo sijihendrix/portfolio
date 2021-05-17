@@ -11,6 +11,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
+    position: "fixed",
   },
   home: {
     color: theme.colors.primary,
