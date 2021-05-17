@@ -14,8 +14,7 @@ export const reactModal = {
   },
   content: {
     maxWidth: "800px",
-    // margin: "auto ",
-    // height: "60%",
+    margin: "0 auto ",
     borderRadius: "12px",
     background: "#eeeeee",
   },

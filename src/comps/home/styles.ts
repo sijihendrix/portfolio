@@ -82,7 +82,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       padding: "2em",
     },
     hero: {
-      minHeight: "90vh",
+      minHeight: "98vh",
       padding: "2% 0",
     },
   },
