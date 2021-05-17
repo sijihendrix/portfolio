@@ -70,7 +70,6 @@ export const Form = ({ handleModal }: FormProps) => {
                   key={index}
                   handleChange={handleChange}
                   name={name}
-                  errorText={errorMsg}
                   type={type}
                 />
               );

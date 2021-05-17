@@ -11,7 +11,11 @@ export const Heading = ({ handleClick }: HeadingProps) => {
   return (
     <div className={classes.heading}>
       <h1 className={classes.talk}>Talk to me.</h1>
-      <Cancel style={{ cursor: "pointer" }} onClick={handleClick} />
+      <Cancel
+        style={{ cursor: "pointer" }}
+        className={classes.cancel}
+        onClick={handleClick}
+      />
     </div>
   );
 };

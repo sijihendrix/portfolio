@@ -13,9 +13,3 @@ export const validateEmail = (value: string) => {
     return true;
   }
 };
-
-export const validateForm = (formData: any) => {
-  switch (formData) {
-    case validateName(formData.name):
-  }
-};

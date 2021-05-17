@@ -1,8 +1,14 @@
 import React from "react";
 import { useStyles } from "./styles";
 import clsx from "clsx";
+import { TextAreaProps } from "../../types";
 
-export const Input = ({ name, type, handleChange, placeholder }: any) => {
+export const Input = ({
+  name,
+  type,
+  handleChange,
+  placeholder,
+}: TextAreaProps) => {
   const classes = useStyles();
 
   return (

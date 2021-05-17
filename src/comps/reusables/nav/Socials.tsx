@@ -2,7 +2,6 @@ import React from "react";
 import { useStyles } from "./styles";
 import { ReactComponent as GitHub } from "../../../assets/github.svg";
 import { ReactComponent as Linkedin } from "../../../assets/linkedin.svg";
-import { Animate } from "../animate/Animate";
 
 export const Socials = () => {
   const classes = useStyles();
@@ -13,16 +12,14 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Animate>
-          <GitHub />
-        </Animate>
+        <GitHub className={classes.link} />
       </a>
       <a
         href="https://github.com/sijihendrix"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Linkedin />
+        <Linkedin className={classes.link} />
       </a>
     </main>
   );

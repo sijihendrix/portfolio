@@ -24,10 +24,11 @@ export type ContainerProps = {
 
 export interface TextAreaProps {
   placeholder: string;
-  rows: number;
-  cols: number;
+  rows?: number;
+  cols?: number;
   handleChange: (e: React.ChangeEvent) => void;
   name: string;
+  type?: string;
 }
 
 export interface HeroProps extends ContainerProps {
