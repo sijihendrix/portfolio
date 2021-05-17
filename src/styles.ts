@@ -1,7 +1,6 @@
 import { createUseStyles } from "react-jss";
-import { Theme } from "./types";
 
-export const useStyles = createUseStyles((theme: Theme) => ({
+export const useStyles = createUseStyles(() => ({
   root: {
     background: "#393E46",
     width: "100%",
@@ -9,13 +8,15 @@ export const useStyles = createUseStyles((theme: Theme) => ({
 }));
 
 export const reactModal = {
-  overlay: { background: "none" },
+  overlay: {
+    background: "none",
+    transition: "all 500ms ease-in-out",
+  },
   content: {
     maxWidth: "800px",
     margin: "auto ",
     height: "60vh",
     borderRadius: "12px",
     background: "#eeeeee",
-    // transition: "margin-right 4s",
   },
 };

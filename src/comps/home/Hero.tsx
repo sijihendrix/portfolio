@@ -2,7 +2,7 @@ import React from "react";
 import { useStyles } from "./styles";
 import clsx from "clsx";
 import { HeroProps } from "../../types";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Hero = ({ children, isOpen }: HeroProps) => {

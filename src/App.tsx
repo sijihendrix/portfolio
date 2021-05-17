@@ -33,6 +33,7 @@ function App() {
                   shouldCloseOnEsc={true}
                   onRequestClose={handleModalClose}
                   ariaHideApp={false}
+                  closeTimeoutMS={200}
                 >
                   <Form handleModal={handleModalClose} />
                 </ReactModal>
