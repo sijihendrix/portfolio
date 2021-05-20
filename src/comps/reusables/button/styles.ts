@@ -9,7 +9,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     lineHeight: " 50px",
     padding: "2px 8px",
     fontSize: "1.8rem",
-    backgroundColor: "#00adb5",
+    backgroundColor: theme.colors.secondPrimary,
     color: "white",
     textTransform: "uppercase",
     fontWeight: " bolder",

@@ -22,8 +22,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "0.2em 0",
     fontSize: "8rem",
     textTransform: "capitalize",
-    textShadow:
-      "-1px 1px 2px #00adb5, 1px 1px 2px #aad8d3,1px -1px 0 #00adb5, -1px -1px 0 #00adb5",
+    textShadow: `-1px 1px 2px ${theme.colors.secondPrimary}, 1px 1px 2px ${theme.colors.secondary},1px -1px 0 ${theme.colors.secondPrimary}, -1px -1px 0 ${theme.colors.secondPrimary}`,
   },
   description: {
     margin: "0",

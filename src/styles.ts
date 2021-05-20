@@ -1,13 +1,3 @@
-import { createUseStyles } from "react-jss";
-import { Theme } from "./types";
-
-export const useStyles = createUseStyles((theme: Theme) => ({
-  root: {
-    // backgroundColor: theme.colors.background,
-    width: "100%",
-  },
-}));
-
 export const reactModal = {
   overlay: {
     background: "none",

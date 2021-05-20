@@ -25,10 +25,10 @@ export const darkTheme = {
 
 export const lightTheme = {
   colors: {
-    background: "#faf3f3",
-    primary: "#eeeeee",
-    secondary: "#aad8d3",
-    secondPrimary: "#00adb5",
+    background: "#f8f5f1",
+    primary: "#45526c",
+    secondary: "#5aa897",
+    secondPrimary: "#f8a488",
   },
   animation: {
     "@keyframes shake": {

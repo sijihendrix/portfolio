@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "react-jss";
 import { darkTheme, lightTheme } from "./theme";
-import { reactModal, useStyles } from "./styles";
+import { reactModal } from "./styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { Form } from "./comps/form/Form";
 import ReactModal from "react-modal";
 
 function App() {
-  const classes = useStyles();
   const [isOpen, setModal] = useState(false);
   const [checked, setCheck] = useState(true);
   const [bckgnd, setBckgnd] = useState("#393E46");
@@ -30,14 +29,14 @@ function App() {
       setBckgnd("#393E46");
     } else {
       setTheme("light");
-      setBckgnd("#faf3f3");
+      setBckgnd("#f8f5f1");
     }
   };
 
   return (
     <>
       <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
-        <div className={classes.root} style={{ background: bckgnd }}>
+        <div style={{ background: bckgnd }}>
           <Router>
             <Switch>
               <Route exact path="/">
@@ -50,6 +49,7 @@ function App() {
                 <ReactModal
                   isOpen={isOpen}
                   style={reactModal}
+                  className="Modal"
                   shouldCloseOnEsc={true}
                   onRequestClose={handleModalClose}
                   ariaHideApp={false}

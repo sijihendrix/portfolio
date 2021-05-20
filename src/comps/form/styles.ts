@@ -20,6 +20,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     display: "flex",
     flexDirection: "column",
     padding: "0.8% 2%",
+    borderRadius: "30px",
   },
   talk: {
     color: theme.colors.secondPrimary,
@@ -68,6 +69,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     },
   },
   cancel: {
+    // background: "red",
     "&:hover": {
       animation: "$shake  1s 1",
     },
