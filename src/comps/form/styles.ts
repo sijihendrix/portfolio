@@ -69,7 +69,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     },
   },
   cancel: {
-    // background: "red",
+    fill: theme.colors.background,
     "&:hover": {
       animation: "$shake  1s 1",
     },

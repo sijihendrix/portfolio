@@ -6,8 +6,10 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     background: theme.colors.background,
     margin: "0 auto",
     padding: "1% 3%",
-    display: "grid",
-    gridTemplateColumns: "40fr 1fr 1fr 1fr",
+    display: "flex",
+    // gridTemplateColumns: "40fr 1fr 1fr 1fr",
+    justifyContent: "space-between",
+    width: "100%",
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
@@ -41,9 +43,11 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       borderBottom: " 1px solid white",
     },
   },
-  socials: {
+
+  rest: {
     display: "flex",
-    justifyContent: "space-between",
+    width: "17%",
+    alignItems: "center",
   },
   modalOpen: {
     opacity: "0.1",

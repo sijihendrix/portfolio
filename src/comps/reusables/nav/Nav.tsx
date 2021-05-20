@@ -17,8 +17,10 @@ export const Nav = ({ isOpen, checked, toggleTheme }: NavTypes) => {
         Home
       </a>
 
-      <Socials />
-      <Toggle toggleTheme={toggleTheme} checked={checked} />
+      <div className={classes.rest}>
+        <Socials />
+        <Toggle toggleTheme={toggleTheme} checked={checked} />
+      </div>
     </nav>
   );
 };

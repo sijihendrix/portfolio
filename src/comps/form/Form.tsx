@@ -63,7 +63,7 @@ export const Form = ({ handleModal }: FormProps) => {
             })}
           </div>
           <div className={classes.inputFlow}>
-            {data.map(({ placeholder, name, errorMsg, type }, index) => {
+            {data.map(({ placeholder, name, type }, index) => {
               return (
                 <Input
                   placeholder={placeholder}
