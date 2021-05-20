@@ -13,6 +13,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
   },
+
   home: {
     color: theme.colors.primary,
     fontSize: "3rem",

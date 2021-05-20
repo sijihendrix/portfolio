@@ -1,4 +1,5 @@
 import React from "react";
+import { ToggleProps } from "./comps/reusables/toggle-switch/Toggle";
 
 export interface Theme {
   colors: Colors;
@@ -8,11 +9,15 @@ type Colors = {
   background: string;
   primary: string;
   secondary: string;
-  white: string;
   secondPrimary: string;
 };
 
 export interface FormProps {
+  handleModal: () => void;
+  isOpen?: boolean;
+}
+
+export interface HomeProps extends ToggleProps {
   handleModal: () => void;
   isOpen?: boolean;
 }

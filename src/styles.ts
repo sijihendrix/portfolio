@@ -1,8 +1,9 @@
 import { createUseStyles } from "react-jss";
+import { Theme } from "./types";
 
-export const useStyles = createUseStyles(() => ({
+export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
-    background: "#393E46",
+    // backgroundColor: theme.colors.background,
     width: "100%",
   },
 }));

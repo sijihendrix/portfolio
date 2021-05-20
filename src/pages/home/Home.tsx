@@ -3,12 +3,17 @@ import { Nav } from "../../comps/reusables/nav/Nav";
 import { Buttons } from "../../comps/home/Buttons";
 import { Content } from "../../comps/home/Content";
 import { Hero } from "../../comps/home/Hero";
-import { FormProps } from "../../types";
+import { HomeProps } from "../../types";
 
-export const Home = ({ handleModal, isOpen }: FormProps) => {
+export const Home = ({
+  handleModal,
+  isOpen,
+  checked,
+  toggleTheme,
+}: HomeProps) => {
   return (
     <>
-      <Nav isOpen={isOpen} />
+      <Nav isOpen={isOpen} toggleTheme={toggleTheme} checked={checked} />
       <Hero isOpen={isOpen}>
         <>
           <Content />

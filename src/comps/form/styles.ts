@@ -22,7 +22,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "0.8% 2%",
   },
   talk: {
-    color: "black",
+    color: theme.colors.secondPrimary,
+
     fontSize: "42px",
     fontStyle: "inherit",
     letterSpacing: " -0.008em",

@@ -39,6 +39,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     minHeight: "100vh",
     maxWidth: "1100px",
     margin: "auto ",
+    background: theme.colors.background,
   },
   buttons: {
     display: "flex",

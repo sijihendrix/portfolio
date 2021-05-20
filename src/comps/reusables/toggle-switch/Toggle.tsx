@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.scss";
-export const Toggle = () => {
-  const [checked, setCheck] = useState(true);
+
+export interface ToggleProps {
+  checked: boolean;
+  toggleTheme: (isChecked: boolean) => void;
+}
+export const Toggle = ({ checked, toggleTheme }: ToggleProps) => {
   return (
     <div className="toggle-switch">
       <input
@@ -10,7 +14,7 @@ export const Toggle = () => {
         name="toggleSwitch"
         id="toggleSwitch"
         checked={checked}
-        onChange={(e) => setCheck(e.target.checked)}
+        onChange={(e) => toggleTheme(e.target.checked)}
       />
       <label className="toggle-switch-label" htmlFor="toggleSwitch">
         <span className="toggle-switch-inner" />

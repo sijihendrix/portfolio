@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "react-jss";
-import { theme } from "./theme";
+import { darkTheme, lightTheme } from "./theme";
 import { reactModal, useStyles } from "./styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
@@ -10,6 +10,8 @@ import ReactModal from "react-modal";
 function App() {
   const classes = useStyles();
   const [isOpen, setModal] = useState(false);
+  const [checked, setCheck] = useState(true);
+  const [bckgnd, setBckgnd] = useState("#393E46");
 
   const handleModalOpen: () => void = () => {
     setModal(true);
@@ -19,14 +21,32 @@ function App() {
     setModal(false);
   };
 
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = (isChecked: boolean) => {
+    setCheck(isChecked);
+    if (checked === false) {
+      setTheme("dark");
+      setBckgnd("#393E46");
+    } else {
+      setTheme("light");
+      setBckgnd("#faf3f3");
+    }
+  };
+
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <div className={classes.root}>
+      <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
+        <div className={classes.root} style={{ background: bckgnd }}>
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home handleModal={handleModalOpen} isOpen={isOpen} />
+                <Home
+                  handleModal={handleModalOpen}
+                  isOpen={isOpen}
+                  toggleTheme={toggleTheme}
+                  checked={checked}
+                />
                 <ReactModal
                   isOpen={isOpen}
                   style={reactModal}
