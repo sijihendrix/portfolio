@@ -46,8 +46,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
 
   rest: {
     display: "flex",
-    width: "17%",
     alignItems: "center",
+    paddingRight: "5%",
   },
   modalOpen: {
     opacity: "0.1",
