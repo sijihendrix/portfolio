@@ -4,6 +4,7 @@ export const darkTheme = {
     primary: "#eeeeee",
     secondary: "#aad8d3",
     secondPrimary: "#00adb5",
+    inputBcknd: "rgba(0,173,181, 0.1)",
   },
   animation: {
     "@keyframes shake": {
@@ -29,6 +30,7 @@ export const lightTheme = {
     primary: "#45526c",
     secondary: "#5aa897",
     secondPrimary: "#f8a488",
+    inputBcknd: "#f8f5f1",
   },
   animation: {
     "@keyframes shake": {

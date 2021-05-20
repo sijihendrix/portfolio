@@ -10,6 +10,7 @@ type Colors = {
   primary: string;
   secondary: string;
   secondPrimary: string;
+  inputBcknd: string;
 };
 
 export interface FormProps {

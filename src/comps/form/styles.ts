@@ -8,7 +8,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     border: `2px solid ${theme.colors.background} `,
     borderRadius: "4px",
     transition: "all .25s ease-in-out",
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.inputBcknd,
     fontSize: " 14px",
     lineHeight: "1.6",
     margin: " 15px 0",
