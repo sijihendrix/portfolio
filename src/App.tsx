@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { Form } from "./comps/form/Form";
 import ReactModal from "react-modal";
+import { Projects } from "./pages/projects/Projects";
 
 function App() {
   const [isOpen, setModal] = useState(false);
@@ -57,6 +58,10 @@ function App() {
                 >
                   <Form handleModal={handleModalClose} />
                 </ReactModal>
+              </Route>
+
+              <Route path="/projects">
+                <Projects toggleTheme={toggleTheme} checked={checked} />
               </Route>
             </Switch>
           </Router>
