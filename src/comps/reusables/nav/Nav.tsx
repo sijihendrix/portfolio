@@ -3,6 +3,7 @@ import { Toggle, ToggleProps } from "../toggle-switch/Toggle";
 import { Socials } from "./Socials";
 import { useStyles } from "./styles";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 interface NavTypes extends ToggleProps {
   isOpen?: boolean;
@@ -13,9 +14,13 @@ export const Nav = ({ isOpen, checked, toggleTheme }: NavTypes) => {
 
   return (
     <nav className={clsx(classes.root, isOpen && classes.modalOpen)}>
-      <a className={classes.home} href="/">
+      <Link to="/"  >
+      <span className={classes.home} >
         Home
-      </a>
+      </span>
+
+      </Link>
+
 
       <div className={classes.rest}>
         <Socials />
