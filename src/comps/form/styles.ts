@@ -14,12 +14,12 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     margin: " 15px 0",
   },
   container: {
-    maxWidth: "800px",
+    maxWidth: "min(10000px, calc(100% +100px))",
     background: theme.colors.primary,
     margin: "10% auto",
     display: "flex",
     flexDirection: "column",
-    padding: "0.8% 2%",
+    padding: "1% 3.5%",
     borderRadius: "30px",
   },
   talk: {

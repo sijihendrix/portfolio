@@ -36,7 +36,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     flexDirection: "column",
     alignItems: "flex-start",
     minHeight: "100vh",
-    maxWidth: "1100px",
+    maxWidth: "min(1100px, calc(80% +100px))",
     margin: "auto ",
     background: theme.colors.background,
   },
@@ -45,7 +45,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "1em",
     paddingTop: "3em",
     justifyContent: "space-between",
-    width: "32%",
+    width: "34%",
     alignItems: "center",
   },
   modalOpen: {
@@ -53,12 +53,12 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   "@media (max-width: 1024px)": {
     buttons: {
-      width: "34%",
+      width: "45%",
     },
   },
   "@media (max-width: 768px)": {
     buttons: {
-      width: "50%",
+      width: "60%",
     },
   },
 
@@ -71,6 +71,11 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       width: "70%",
       padding: "2em",
     },
+    hero:{
+
+      maxWidth:"95%",
+      // width: "100%"
+    }
   },
   "@media (max-width: 504px)": {
     root: {
@@ -95,6 +100,11 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
 
   "@media (max-width: 375px)": {
+    hero:{
+
+      maxWidth:"100%",
+      // width: "100%"
+    },
     buttons: {
       width: "90%",
     },
