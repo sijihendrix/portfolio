@@ -18,7 +18,6 @@ export const Nav = ({ isOpen, checked, toggleTheme }: NavTypes) => {
       <span className={classes.home} >
         Home
       </span>
-
       </Link>
 
 
