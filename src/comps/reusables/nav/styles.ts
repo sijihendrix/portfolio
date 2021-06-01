@@ -14,6 +14,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
+    zIndex: "1",
   },
 
   home: {

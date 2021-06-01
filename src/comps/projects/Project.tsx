@@ -1,25 +1,8 @@
-import React, {
-  FunctionComponent,
-  JSXElementConstructor,
-  ReactElement,
-  SVGProps,
-} from "react";
+import React from "react";
 import { useStyles } from "./styles";
-import { Link } from "react-router-dom";
+import { ProjectProps } from "../../types";
 
-interface ProjectsProps {
-  title: string;
-  description: string;
-  source: string;
-  link: string;
-}
-
-export const Project = ({
-  title,
-  description,
-  source,
-  link,
-}: ProjectsProps) => {
+export const Project = ({ title, description, source, link }: ProjectProps) => {
   const classes = useStyles();
   return (
     <div className={classes.project}>
@@ -27,7 +10,11 @@ export const Project = ({
       <p className={classes.description}>{description}</p>
 
       <a href={link} rel="noopener noreferrer" target="_blank">
-        <img src={source} className={classes.image} />
+        <img
+          src={source}
+          className={classes.image}
+          alt={"boolean not assignable to string"}
+        />
       </a>
     </div>
   );
