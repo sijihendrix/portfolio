@@ -52,3 +52,10 @@ export type formDataProps = {
   reply_to: string;
   message: string;
 };
+
+export interface ProjectProps {
+  title: string;
+  description: string;
+  source: string;
+  link: string;
+}
