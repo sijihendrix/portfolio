@@ -4,7 +4,7 @@ import { lorem } from "../../helpers/lorem";
 import { Project } from "./Project";
 import Tea from "../../assets/tea.jpg";
 import Ships from "../../assets/ships.jpg";
-import Motorcycle from "../../assets/summersbloom.png";
+import Motorcycle from "../../assets/motorcycle.jpg";
 
 const data = [
   {

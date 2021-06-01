@@ -10,10 +10,16 @@ export const Home = ({
   isOpen,
   checked,
   toggleTheme,
+  handleModalClose,
 }: HomeProps) => {
   return (
     <>
-      <Nav isOpen={isOpen} toggleTheme={toggleTheme} checked={checked} />
+      <Nav
+        isOpen={isOpen}
+        toggleTheme={toggleTheme}
+        checked={checked}
+        onClick={handleModalClose}
+      />
       <Hero isOpen={isOpen}>
         <>
           <Content />

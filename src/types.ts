@@ -21,6 +21,7 @@ export interface FormProps {
 export interface HomeProps extends ToggleProps {
   handleModal: () => void;
   isOpen?: boolean;
+  handleModalClose: HomeProps["handleModal"];
 }
 
 export type ContainerProps = {

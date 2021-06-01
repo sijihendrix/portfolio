@@ -8,7 +8,7 @@ interface ProjectsProps extends ToggleProps {}
 export const Projects = ({ toggleTheme, checked }: ProjectsProps) => {
   return (
     <>
-      <Nav toggleTheme={toggleTheme} checked={checked} />
+      <Nav toggleTheme={toggleTheme} checked={checked} onClick={() => null} />
 
       <Container />
     </>

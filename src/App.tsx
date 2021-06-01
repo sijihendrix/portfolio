@@ -46,6 +46,7 @@ function App() {
                   isOpen={isOpen}
                   toggleTheme={toggleTheme}
                   checked={checked}
+                  handleModalClose={handleModalClose}
                 />
                 <ReactModal
                   isOpen={isOpen}
