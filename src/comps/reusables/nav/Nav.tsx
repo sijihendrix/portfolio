@@ -1,5 +1,7 @@
 import React from "react";
-import { Toggle, ToggleProps } from "../toggle-switch/Toggle";
+
+import { Toggle, ToggleProps } from "../toggle/Toggle";
+
 import { Socials } from "./Socials";
 import { useStyles } from "./styles";
 import clsx from "clsx";
@@ -10,7 +12,7 @@ interface NavTypes extends ToggleProps {
   onClick: () => void;
 }
 
-export const Nav = ({ isOpen, checked, toggleTheme, onClick }: NavTypes) => {
+export const Nav = ({ isOpen, toggleTheme, onClick }: NavTypes) => {
   const classes = useStyles();
 
   return (
@@ -24,7 +26,8 @@ export const Nav = ({ isOpen, checked, toggleTheme, onClick }: NavTypes) => {
 
       <div className={classes.rest}>
         <Socials />
-        <Toggle toggleTheme={toggleTheme} checked={checked} />
+
+        <Toggle toggleTheme={toggleTheme} />
       </div>
     </nav>
   );

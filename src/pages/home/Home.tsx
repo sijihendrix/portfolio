@@ -8,7 +8,7 @@ import { HomeProps } from "../../types";
 export const Home = ({
   handleModal,
   isOpen,
-  checked,
+
   toggleTheme,
   handleModalClose,
 }: HomeProps) => {
@@ -17,7 +17,6 @@ export const Home = ({
       <Nav
         isOpen={isOpen}
         toggleTheme={toggleTheme}
-        checked={checked}
         onClick={handleModalClose}
       />
       <Hero isOpen={isOpen}>

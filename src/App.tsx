@@ -10,8 +10,9 @@ import { Projects } from "./pages/projects/Projects";
 
 function App() {
   const [isOpen, setModal] = useState(false);
-  const [checked, setCheck] = useState(true);
+
   const [bckgnd, setBckgnd] = useState("#393E46");
+  const [theme, setTheme] = useState("dark");
 
   const handleModalOpen: () => void = () => {
     setModal(true);
@@ -21,11 +22,8 @@ function App() {
     setModal(false);
   };
 
-  const [theme, setTheme] = useState("dark");
-
-  const toggleTheme = (isChecked: boolean) => {
-    setCheck(isChecked);
-    if (checked === false) {
+  const toggleTheme = () => {
+    if (theme === "light") {
       setTheme("dark");
       setBckgnd("#393E46");
     } else {
@@ -45,7 +43,6 @@ function App() {
                   handleModal={handleModalOpen}
                   isOpen={isOpen}
                   toggleTheme={toggleTheme}
-                  checked={checked}
                   handleModalClose={handleModalClose}
                 />
                 <ReactModal
@@ -62,7 +59,7 @@ function App() {
               </Route>
 
               <Route path="/projects">
-                <Projects toggleTheme={toggleTheme} checked={checked} />
+                <Projects toggleTheme={toggleTheme} />
               </Route>
             </Switch>
           </Router>

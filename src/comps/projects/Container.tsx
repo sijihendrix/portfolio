@@ -1,37 +1,7 @@
 import React from "react";
 import { useStyles } from "./styles";
-import { lorem } from "../../helpers/lorem";
 import { Project } from "./Project";
-import Tea from "../../assets/tea.jpg";
-import Ships from "../../assets/ships.jpg";
-import Motorcycle from "../../assets/motorcycle.jpg";
-
-const data = [
-  {
-    title: "Lorem",
-    description: lorem.generateSentences(4),
-    source: Tea,
-    link: "https://johnkavanagh.co.uk/projects/",
-  },
-  {
-    title: "Lorem",
-    description: lorem.generateSentences(4),
-    source: Ships,
-    link: "https://johnkavanagh.co.uk/projects/",
-  },
-  {
-    title: "SummersBloom",
-    description: lorem.generateSentences(4),
-    source: Motorcycle,
-    link: "https://summersbloomlagos.netlify.app/",
-  },
-  {
-    title: "Lorem",
-    description: lorem.generateSentences(4),
-    source: Tea,
-    link: "https://johnkavanagh.co.uk/projects/",
-  },
-];
+import { data } from "./data";
 
 export const Container = () => {
   const classes = useStyles();

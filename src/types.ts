@@ -1,8 +1,9 @@
 import React from "react";
-import { ToggleProps } from "./comps/reusables/toggle-switch/Toggle";
+import { ToggleProps } from "./comps/reusables/toggle/Toggle";
 
 export interface Theme {
   colors: Colors;
+  lightTheme: boolean;
 }
 
 type Colors = {
@@ -11,6 +12,8 @@ type Colors = {
   secondary: string;
   secondPrimary: string;
   inputBcknd: string;
+  backgroundToggle: string;
+  toggleBorder: string;
 };
 
 export interface FormProps {

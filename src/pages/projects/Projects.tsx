@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "../../comps/projects/Container";
 import { Nav } from "../../comps/reusables/nav/Nav";
-import { ToggleProps } from "../../comps/reusables/toggle-switch/Toggle";
+import { ToggleProps } from "../../comps/reusables/toggle/Toggle";
 
 interface ProjectsProps extends ToggleProps {}
 
-export const Projects = ({ toggleTheme, checked }: ProjectsProps) => {
+export const Projects = ({ toggleTheme }: ProjectsProps) => {
   return (
     <>
-      <Nav toggleTheme={toggleTheme} checked={checked} onClick={() => null} />
+      <Nav toggleTheme={toggleTheme} onClick={() => null} />
 
       <Container />
     </>
