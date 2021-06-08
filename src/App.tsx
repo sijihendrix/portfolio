@@ -10,7 +10,6 @@ import { Projects } from "./pages/projects/Projects";
 
 function App() {
   const [isOpen, setModal] = useState(false);
-
   const [bckgnd, setBckgnd] = useState("#393E46");
   const [theme, setTheme] = useState("dark");
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { ToggleProps } from "./comps/reusables/toggle/Toggle";
 
 export interface Theme {
   colors: Colors;
@@ -62,4 +61,8 @@ export interface ProjectProps {
   description: string;
   source: string;
   link: string;
+}
+
+export interface ToggleProps {
+  toggleTheme: () => void;
 }

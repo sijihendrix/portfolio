@@ -1,11 +1,12 @@
 import React from "react";
 
-import { Toggle, ToggleProps } from "../toggle/Toggle";
+import { Toggle } from "../toggle/Toggle";
 
 import { Socials } from "./Socials";
 import { useStyles } from "./styles";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
+import { ToggleProps } from "../../../types";
 
 interface NavTypes extends ToggleProps {
   isOpen?: boolean;

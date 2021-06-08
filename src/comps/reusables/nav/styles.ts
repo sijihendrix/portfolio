@@ -7,7 +7,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     margin: "0 auto",
     padding: "1% 3%",
     display: "flex",
-    // gridTemplateColumns: "40fr 1fr 1fr 1fr",
     justifyContent: "space-between",
     width: "100%",
     alignItems: "center",

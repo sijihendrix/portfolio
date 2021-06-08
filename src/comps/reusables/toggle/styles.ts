@@ -20,7 +20,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     position: "relative",
     width: "8rem",
   },
-  mode: {
+  svg: {
     height: "auto",
     width: "20rem",
     transition: " all 0.3s linear",
