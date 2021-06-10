@@ -5,15 +5,19 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   root: {
     background: theme.colors.background,
     margin: "0 auto",
-    padding: "1% 3%",
+    padding: "1% 2%",
     display: "flex",
     justifyContent: "space-between",
     width: "100%",
+    maxWidth: "min(1100px, calc(80% +100px))",
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
-    zIndex: "1",
+    left: "50%",
+    top: "6%",
+    right: "50%",
+    transform: "translate(-50%, -50%)",
   },
 
   home: {
@@ -47,7 +51,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   rest: {
     display: "flex",
     alignItems: "center",
-    paddingRight: "5%",
+    // paddingRight: "5%",
   },
   modalOpen: {
     opacity: "0.1",
@@ -69,6 +73,27 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   link: {
     "&:hover": {
       animation: "$shake  1s 1",
+    },
+  },
+  "@media (max-width: 1024px)": {
+    root: {
+      top: "3%",
+    },
+  },
+
+  "@media (max-width: 540px)": {
+    root: {
+      maxWidth: "none",
+      paddingLeft: "9%",
+      top: "4.6%",
+    },
+    rest: {
+      paddingRight: "5%",
+    },
+  },
+  "@media (max-width: 375px)": {
+    root: {
+      top: "4%",
     },
   },
 }));
