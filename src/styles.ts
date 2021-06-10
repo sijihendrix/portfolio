@@ -2,7 +2,7 @@ export const reactModal = {
   overlay: {
     background: "none",
     transition: "all 500ms ease-in-out",
-    cursor: "pointer",
+    // cursor: "pointer",
   },
   content: {
     maxWidth: "min(900px, calc(80% +100px))",

@@ -15,10 +15,6 @@ code {
 html {
   font-size: 50%;
   box-sizing: border-box;
-
-  @media screen and (min-width: 768px) {
-    font-size: 62.5%;
-  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Roboto:wght@300&display=swap");
 .ReactModal__Overlay {
@@ -32,4 +28,10 @@ html {
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 }

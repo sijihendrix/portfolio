@@ -14,7 +14,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
     left: "50%",
-
+    zIndex: "1",
     transform: "translate( -50%)",
   },
 
@@ -71,6 +71,11 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   link: {
     "&:hover": {
       animation: "$shake  1s 1",
+    },
+  },
+  "@media (max-width: 540px)": {
+    root: {
+      width: "90%",
     },
   },
 }));

@@ -13,21 +13,21 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   hi: {
     margin: "0",
     padding: "0.1em 0",
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     textTransform: "capitalize",
   },
   name: {
     lineHeight: "1.1",
     margin: "0",
     padding: "0.2em 0",
-    fontSize: "8rem",
+    fontSize: "5rem",
     textTransform: "capitalize",
     textShadow: `-1px 1px 2px ${theme.colors.secondPrimary}, 1px 1px 2px ${theme.colors.secondary},1px -1px 0 ${theme.colors.secondPrimary}, -1px -1px 0 ${theme.colors.secondPrimary}`,
   },
   description: {
     margin: "0",
     padding: "0.1em 0",
-    fontSize: "2.5rem",
+    fontSize: "2rem",
     fontFamily: "'Montserrat', sans-serif",
   },
   hero: {
@@ -71,11 +71,10 @@ export const useStyles = createUseStyles((theme: Theme) => ({
       width: "70%",
       padding: "2em",
     },
-    hero:{
-
-      maxWidth:"95%",
+    hero: {
+      maxWidth: "95%",
       // width: "100%"
-    }
+    },
   },
   "@media (max-width: 504px)": {
     root: {
@@ -100,9 +99,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
 
   "@media (max-width: 375px)": {
-    hero:{
-
-      maxWidth:"100%",
+    hero: {
+      maxWidth: "100%",
       // width: "100%"
     },
     buttons: {
@@ -118,6 +116,14 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   "@media (max-width: 320px)": {
     buttons: {
       width: "90%",
+    },
+    root: {
+      paddingTop: "10em",
+    },
+  },
+  "@media (max-width: 280px)": {
+    root: {
+      paddingTop: "10em",
     },
   },
 }));

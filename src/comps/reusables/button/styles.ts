@@ -8,7 +8,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     letterSpacing: " 0.5px",
     lineHeight: " 50px",
     padding: "2px 8px",
-    fontSize: "1.8rem",
+    fontSize: "1.5rem",
     backgroundColor: theme.colors.secondPrimary,
     color: "white",
     textTransform: "uppercase",
