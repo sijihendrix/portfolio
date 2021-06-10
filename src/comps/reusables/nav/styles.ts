@@ -20,7 +20,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     transform: "translate(-50%, -50%)",
   },
 
-  home: {
+  sij: {
     color: theme.colors.primary,
     fontSize: "3rem",
     cursor: "pointer",

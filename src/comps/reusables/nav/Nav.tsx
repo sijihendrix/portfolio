@@ -15,6 +15,7 @@ interface NavTypes extends ToggleProps {
 
 export const Nav = ({ isOpen, toggleTheme, onClick }: NavTypes) => {
   const classes = useStyles();
+  const sij = `<Sij/>`;
 
   return (
     <nav
@@ -22,7 +23,7 @@ export const Nav = ({ isOpen, toggleTheme, onClick }: NavTypes) => {
       onClick={onClick}
     >
       <Link to="/">
-        <span className={classes.home}>Sij</span>
+        <span className={classes.sij}> {sij}</span>
       </Link>
 
       <div className={classes.rest}>
