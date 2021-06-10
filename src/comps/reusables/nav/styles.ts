@@ -8,16 +8,14 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "1% 2%",
     display: "flex",
     justifyContent: "space-between",
-    width: "100%",
-    maxWidth: "min(1100px, calc(80% +100px))",
+    width: "min(1100px, calc(80% +100px))",
     alignItems: "center",
     boxShadow: " 0 5px 20px -12px rgb(0 0 0 / 55%)",
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
     left: "50%",
-    top: "5%",
-    right: "50%",
-    transform: "translate(-50%, -50%)",
+
+    transform: "translate( -50%)",
   },
 
   sij: {
@@ -73,27 +71,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   link: {
     "&:hover": {
       animation: "$shake  1s 1",
-    },
-  },
-  "@media (max-width: 1024px)": {
-    root: {
-      top: "2.4%",
-    },
-  },
-
-  "@media (max-width: 540px)": {
-    root: {
-      maxWidth: "none",
-      paddingLeft: "9%",
-      top: "4.2%",
-    },
-    rest: {
-      paddingRight: "5%",
-    },
-  },
-  "@media (max-width: 375px)": {
-    root: {
-      top: "3.6%",
     },
   },
 }));
