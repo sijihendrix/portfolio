@@ -15,7 +15,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     fontFamily: "'Montserrat', sans-serif",
     position: "fixed",
     left: "50%",
-    top: "6%",
+    top: "5%",
     right: "50%",
     transform: "translate(-50%, -50%)",
   },
@@ -77,7 +77,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   "@media (max-width: 1024px)": {
     root: {
-      top: "3%",
+      top: "2.4%",
     },
   },
 
@@ -85,7 +85,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     root: {
       maxWidth: "none",
       paddingLeft: "9%",
-      top: "4.6%",
+      top: "4.2%",
     },
     rest: {
       paddingRight: "5%",
@@ -93,7 +93,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   },
   "@media (max-width: 375px)": {
     root: {
-      top: "4%",
+      top: "3.6%",
     },
   },
 }));

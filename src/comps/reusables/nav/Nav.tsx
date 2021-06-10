@@ -22,7 +22,7 @@ export const Nav = ({ isOpen, toggleTheme, onClick }: NavTypes) => {
       onClick={onClick}
     >
       <Link to="/">
-        <span className={classes.home}>Home</span>
+        <span className={classes.home}>Sij</span>
       </Link>
 
       <div className={classes.rest}>
