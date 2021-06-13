@@ -23,7 +23,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
-    maxWidth: "min(1100px, calc(80% +100px))",
+    // maxWidth: "min(1100px, calc(80% +100px))",
+    maxWidth: "80%",
     color: theme.colors.primary,
     alignItems: "center",
     padding: "10% 0% 5%",
