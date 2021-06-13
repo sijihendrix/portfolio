@@ -14,7 +14,7 @@ export const data = [
     title: "Lorem",
     description: lorem.generateSentences(4),
     source: Ships,
-    link: "https://johnkavanagh.co.uk/projects/",
+    link: "http://members.dominioncooperative.org/",
   },
   {
     title: "SummersBloom",

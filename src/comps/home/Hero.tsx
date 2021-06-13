@@ -11,13 +11,14 @@ export const Hero = ({ children, isOpen }: HeroProps) => {
     <section className={clsx(classes.hero, isOpen && classes.modalOpen)}>
       <ToastContainer
         autoClose={5000}
-        hideProgressBar={false}
+        hideProgressBar={true}
         newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
+        position="top-left"
       />
       {children}
     </section>

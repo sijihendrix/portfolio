@@ -9,7 +9,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     padding: "5% 0",
   },
   title: {
-    fontSize: "3rem",
+    fontSize: "2.3rem",
     lineHeight: "1.2",
     margin: "0",
     textTransform: "uppercase",
@@ -17,7 +17,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     letterSpacing: "0.2rem",
   },
   description: {
-    fontSize: "2rem",
+    fontSize: "1.5rem",
     lineHeight: "1.5",
   },
   container: {
@@ -68,7 +68,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
 
   "@media (max-width: 414px)": {
     container: {
-      padding: "20% 0% 5%",
+      padding: "23% 0% 5%",
     },
     projects: {
       padding: "15% 0 0 0",
