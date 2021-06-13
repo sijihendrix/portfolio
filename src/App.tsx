@@ -47,8 +47,8 @@ function App() {
                 <ReactModal
                   isOpen={isOpen}
                   style={reactModal}
-                  className="Modal"
                   shouldCloseOnEsc={true}
+                  className="modal"
                   onRequestClose={handleModalClose}
                   ariaHideApp={false}
                   closeTimeoutMS={500}

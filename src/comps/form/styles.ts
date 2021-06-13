@@ -13,8 +13,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     lineHeight: "1.6",
     margin: " 15px 0",
   },
+
   container: {
-    maxWidth: "min(10000px, calc(100% +100px))",
     background: theme.colors.primary,
     margin: "10% auto",
     display: "flex",
