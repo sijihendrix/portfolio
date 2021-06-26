@@ -16,7 +16,8 @@ html {
   font-size: 50%;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Roboto:wght@300&display=swap&family=Viaoda+Libre&display=swap");
+
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 5000ms ease-in-out;

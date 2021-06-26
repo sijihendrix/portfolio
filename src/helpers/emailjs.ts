@@ -9,14 +9,18 @@ const USER_ID = "user_rUDjcygOPlpS5espn9ZLE";
 export function handleEmailSend(formData: formDataProps) {
   const data = formData;
 
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, data, USER_ID).then(
-    function (response) {
-      console.log(response.status, response.text);
-      toast("Your Email has been sent to me, thanks");
-    },
-    function (err) {
-      console.log(err);
-      toast(err);
-    }
-  );
+  try {
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, USER_ID).then(
+      function (response) {
+        console.log(response.status, response.text);
+        toast("Your Email has been sent to me, thanks");
+      },
+      function (err) {
+        console.log(err);
+        toast(err);
+      }
+    );
+  } catch (e) {
+    console.log(e);
+  }
 }

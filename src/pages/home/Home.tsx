@@ -4,6 +4,7 @@ import { Buttons } from "../../comps/home/Buttons";
 import { Content } from "../../comps/home/Content";
 import { Hero } from "../../comps/home/Hero";
 import { HomeProps } from "../../types";
+import { Socials } from "../../comps/reusables/socials/Socials";
 
 export const Home = ({
   handleModal,
@@ -23,6 +24,8 @@ export const Home = ({
         <>
           <Content />
           <Buttons handleModal={handleModal} />
+          {/* <Footer /> */}
+          <Socials />
         </>
       </Hero>
     </>

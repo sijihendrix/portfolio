@@ -1,8 +1,5 @@
 import React from "react";
-
 import { Toggle } from "../toggle/Toggle";
-
-import { Socials } from "./Socials";
 import { useStyles } from "./styles";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
@@ -27,8 +24,6 @@ export const Nav = ({ isOpen, toggleTheme, onClick }: NavTypes) => {
       </Link>
 
       <div className={classes.rest}>
-        <Socials />
-
         <Toggle toggleTheme={toggleTheme} />
       </div>
     </nav>

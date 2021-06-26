@@ -6,7 +6,7 @@ import { ReactComponent as Linkedin } from "../../../assets/linkedin.svg";
 export const Socials = () => {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.root}>
       <a
         href="https://www.linkedin.com/in/oluwasijibomi-bamgboye/"
         target="_blank"
@@ -21,6 +21,6 @@ export const Socials = () => {
       >
         <GitHub className={classes.link} />
       </a>
-    </>
+    </div>
   );
 };
