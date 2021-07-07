@@ -27,7 +27,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   description: {
     margin: "0",
     padding: "0.1em 0",
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     fontFamily: "'Montserrat', sans-serif",
   },
   hero: {
@@ -36,7 +36,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     flexDirection: "column",
     alignItems: "flex-start",
     minHeight: "100vh",
-    // maxWidth: "min(1100px, calc(80% +100px))",
     maxWidth: "80%",
     margin: "auto ",
     background: theme.colors.background,
@@ -52,9 +51,31 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   modalOpen: {
     opacity: "0.1",
   },
+  "@media (max-width: 2048px)": {
+    buttons: {
+      width: "24%",
+    },
+  },
+  "@media (max-width: 1536px)": {
+    buttons: {
+      width: "30%",
+    },
+  },
+
+  "@media (max-width: 1280px)": {
+    buttons: {
+      width: "35%",
+    },
+  },
   "@media (max-width: 1024px)": {
+    root: {
+      paddingTop: "0",
+    },
     buttons: {
       width: "45%",
+    },
+    hero: {
+      paddingTop: "0",
     },
   },
   "@media (max-width: 768px)": {
@@ -74,7 +95,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     },
     hero: {
       maxWidth: "95%",
-      // width: "100%"
     },
   },
   "@media (max-width: 504px)": {
@@ -102,7 +122,6 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   "@media (max-width: 375px)": {
     hero: {
       maxWidth: "100%",
-      // width: "100%"
     },
     buttons: {
       width: "90%",

@@ -32,7 +32,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
     color: theme.colors.primary,
     border: " 1px solid black",
     "&:hover": {
-      backgroundColor: "theme.textColor",
+      backgroundColor: "theme.colors.background",
       color: theme.colors.secondPrimary,
       border: "none",
     },
