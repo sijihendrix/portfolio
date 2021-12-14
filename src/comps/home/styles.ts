@@ -43,9 +43,8 @@ export const useStyles = createUseStyles((theme: Theme) => ({
   buttons: {
     display: "flex",
     padding: "1em",
-    paddingTop: "3em",
     justifyContent: "space-between",
-    width: "34%",
+    width: "20%",
     alignItems: "center",
   },
   modalOpen: {
@@ -130,7 +129,7 @@ export const useStyles = createUseStyles((theme: Theme) => ({
 
   "@media (max-width: 360px)": {
     buttons: {
-      width: "95%",
+      width: "93%",
     },
   },
   "@media (max-width: 320px)": {
